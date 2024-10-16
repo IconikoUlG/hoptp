@@ -1,0 +1,1 @@
+title @p[tag=ulg.t72] actionbar ["",{"text":"[ ","color":"blue"},{"text":"\u221e ","bold":true,"color":"blue"},{"text":"]","color":"blue"}]

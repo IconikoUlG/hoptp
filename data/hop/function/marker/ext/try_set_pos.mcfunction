@@ -1,3 +1,4 @@
+#called from interaction/i/macro
 tag @s remove hop.too_far
 
 data modify entity @s data.packet.destination set \
@@ -34,12 +35,7 @@ execute if score @s ulg.foo > $maxHopDistance ulg.var run tag @s add hop.too_far
 scoreboard players set @s ulg.bar 0
 tag @s[tag=!hop.too_far] add hop.finding_price
 
-# to do - square root
-
-function hop:marker/calc_d_macro with entity @s data.packet
-###
-
-function hop:marker/tsp_macro with entity @s data.packet
+function hop:marker/ext/macro_tsp with entity @s data.packet
 
 #reload
 function hop:marker/reload

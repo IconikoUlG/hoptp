@@ -44,6 +44,6 @@
     }
   },
   "rewards": {
-    "function": "hop:try_place_adv"
+    "function": "hop:opt/try_place_adv"
   }
 }

@@ -11,4 +11,6 @@ scoreboard objectives add hop.time_cost dummy
 
 schedule function hop:every1s 1s replace
 
+scoreboard players set #100 ulg.var 100
+
 function hop:config
