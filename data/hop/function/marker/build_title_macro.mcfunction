@@ -1,0 +1,1 @@
+$data modify entity @s data.packet.title set value '"> $(destX) $(destY) $(destZ)"'

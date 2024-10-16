@@ -1,0 +1,2 @@
+#particle minecraft:block_marker{block_state:"minecraft:oak_sapling"} ~ ~ ~ 0 0 0 0 1 force
+execute if block ~ ~ ~ #minecraft:wool_carpets if block ~ ~-1 ~ minecraft:lodestone align xyz positioned ~0.5 ~ ~0.5 unless entity @n[tag=hop.gateway,distance=..0.1] run function hop:place

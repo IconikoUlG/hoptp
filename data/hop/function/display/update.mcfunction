@@ -1,0 +1,1 @@
+execute unless entity @n[type=minecraft:interaction,tag=hop.gateway,distance=..0.1] run kill @s

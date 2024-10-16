@@ -1,0 +1,1 @@
+particle minecraft:small_flame ~ ~0.8 ~ 0.4 0.6 0.4 0.001 1 force

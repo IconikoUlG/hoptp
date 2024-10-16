@@ -1,0 +1,2 @@
+#$execute unless data storage ulg:hoptp gates[{id:$(id)}] run return run data modify storage ulg:hoptp gates append value {id:$(id),posX:$(posX),posY:$(posY),posZ:$(posZ),destX:$(destX),destY:$(destY),destZ:$(destZ)}
+$data modify storage ulg:hoptp gates[{id:$(id)}] set value {id:$(id),posX:$(posX),posY:$(posY),posZ:$(posZ),destX:$(destX),destY:$(destY),destZ:$(destZ),title:$(title)}

@@ -1,0 +1,1 @@
+return run function hop:marker/bl_v_macro with entity @s data.packet
