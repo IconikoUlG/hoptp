@@ -3,7 +3,7 @@ execute unless entity @n[type=minecraft:marker,tag=hop.gateway,distance=..0.1] r
 execute as @s[tag=!hop.valid] run function hop:interaction/on_unset
 execute as @s[tag=hop.valid] run function hop:interaction/on_valid
 
-execute if data entity @s attack.player run function hop:interaction/destroy
+execute if data entity @s attack.player run function hop:interaction/attack
 execute if data entity @s interaction.player run function hop:interaction/interaction
 
 execute if entity @a[distance=..0.4,gamemode=!spectator,tag=!ulg.hop.post_tp] run function hop:interaction/try_teleport

@@ -1,3 +1,5 @@
+execute if data storage ulg:hoptp t.SelectedItem.components."minecraft:custom_data"."hop:fuel".value run return run function hop:interaction/if_macro0
+
 $execute unless data storage ulg:hoptp config.fuels."$(id)" run return fail
 
 $execute store result score #t ulg.t run data get storage ulg:hoptp config.fuels."$(id)"

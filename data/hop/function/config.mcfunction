@@ -1,6 +1,6 @@
 #cost every x blocks
-scoreboard players set $var hop.fuel_cost 3
-scoreboard players set $x hop.fuel_cost 200
+scoreboard players set $var hop.fuel_cost 1
+scoreboard players set $x hop.fuel_cost 100
 #time for tp, calculated as -> (fuel_cost*multiplier)/divider + base
 scoreboard players set $base hop.time_cost 20
 scoreboard players set $multiplier hop.time_cost 1
