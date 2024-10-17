@@ -11,7 +11,6 @@ execute unless data storage ulg:hoptp t.SelectedItem.components."minecraft:custo
 run function hop:marker/build_title_macro with entity @s data.packet
 
 #calc distance
-
 execute store result score #x ulg.t run data get entity @s data.packet.posX 1
 execute store result score #y ulg.t run data get entity @s data.packet.posY 1
 execute store result score #z ulg.t run data get entity @s data.packet.posZ 1
@@ -31,6 +30,7 @@ scoreboard players operation @s ulg.foo = #dx ulg.t
 scoreboard players operation @s ulg.foo += #dy ulg.t
 scoreboard players operation @s ulg.foo += #dz ulg.t
 
+execute if score @s ulg.foo matches ..-1 run tag @s add hop.too_far
 execute if score @s ulg.foo > $maxHopDistance ulg.var run tag @s add hop.too_far
 scoreboard players set @s ulg.bar 0
 tag @s[tag=!hop.too_far] add hop.finding_price
